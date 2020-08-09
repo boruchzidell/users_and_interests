@@ -1,0 +1,13 @@
+
+<h3> <%= @name %></h3>
+
+<h5>Email: <a href="mailto:<%= @email %>"> <%= @email %> </a> </h5>
+
+<h5>Interests:</h5>
+<p> <%= @interests %> </p>
+
+<ul>
+  <% @other_users.each do |user| %>
+    <li><a href="/<%=user%> "> <%= user %>  </a></li>
+  <% end %>
+<ul>
